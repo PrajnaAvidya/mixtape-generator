@@ -70,7 +70,6 @@ highlevel:
         'svm_models/mood_sad.history',
         'svm_models/moods_mirex.history',
         'svm_models/timbre.history',
-        'svm_models/tonal_atonal.history',
         'svm_models/voice_instrumental.history'
     ]
 
