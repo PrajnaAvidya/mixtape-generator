@@ -7,7 +7,7 @@ MongoDB (or Docker)
 A directory full of audio files (mp3, ogg, flac, etc)
 
 ## Setup
-Update the MUSIC_PATH var in .env with the absolute path to your audio files you want analyzed.
+Update the MUSIC_PATH var in .env with the absolute path to your audio files you want analyzed. If not using Docker, update the DB_CONNECTION_STRING var as well.
 
 If using docker, run **docker-compose up** from the repository to start the Jupyter environment and MongoDB. Otherwise start those as you choose.
 
@@ -19,3 +19,4 @@ Launch the **playlist** notebook and tweak the kmeans params to your desired num
 ## TODO
 * env for db info
 * automatic cluster count based on track count
+* move sys install hacks to docker setup
