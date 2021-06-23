@@ -1,0 +1,23 @@
+version: "3.7"
+services:
+  jupyter:
+    image: jupyter/scipy-notebook
+    volumes:
+      - .:/home/jovyan/mixtape
+      - ${MUSIC_PATH}:/home/jovyan/music:ro
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+    ports:
+      - "8888:8888"
+    networks:
+      - jupyternet
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    networks:
+      - jupyternet
+
+networks:
+  jupyternet:
+    driver: "bridge"
