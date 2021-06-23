@@ -17,6 +17,5 @@ Launch the **extractor** notebook and update path to point to your music files. 
 Launch the **playlist** notebook and tweak the kmeans params to your desired number of groups, run the cells and you will have a dataframe with your resulting playlist groups. In cell 16 you can generate try your playlists directly from the Jupyter notebook.
 
 ## TODO
-* env for db info
 * automatic cluster count based on track count
-* move sys install hacks to docker setup
+* automatic parameter adjustment for clustering

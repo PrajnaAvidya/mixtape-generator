@@ -1,7 +1,7 @@
 version: "3.7"
 services:
   jupyter:
-    image: jupyter/scipy-notebook
+    build: .
     volumes:
       - .:/home/jovyan/mixtape
       - ${MUSIC_PATH}:/home/jovyan/music:ro
